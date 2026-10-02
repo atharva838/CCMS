@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>CCMS | Civic Complaint Management</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">C</span><span>CCMS<small>Civic Care, Made Simple</small></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a class="active" href="index.html">Home</a><a href="complaint.html">File Complaint</a><a href="status.html">Track Status</a><a class="nav-admin" href="login.html">Admin Login</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR CITY. YOUR VOICE.</span>
+        <h1>Let’s make our city<br><span>better together.</span></h1>
+        <p>Report civic issues in your neighbourhood and follow their progress. Every clear report is a step toward a cleaner, safer city.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="complaint.html">Report an issue <span>↗</span></a><a class="btn btn-secondary" href="status.html">Track a complaint</a></div>
+        <div class="trust-row"><span>✓ Simple reporting</span><span>✓ Status updates</span><span>✓ Community-focused</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a city neighbourhood">
+        <div class="sun"></div><div class="city-building building-one"></div><div class="city-building building-two"></div><div class="city-building building-three"></div>
+        <div class="road"></div><div class="tree tree-one">✦</div><div class="tree tree-two">✦</div>
+        <div class="floating-note"><span class="note-icon">✓</span><span><b>Speak up</b><small>Help your neighbourhood</small></span></div>
+      </div>
+    </section>
+    <section class="section category-section">
+      <div class="section-heading"><div><span class="eyebrow">WHAT CAN YOU REPORT?</span><h2>Civic issues, one place</h2></div><p>Choose a category to understand the types of problems you can report.</p></div>
+      <div id="categorycontainer" class="category-grid" aria-live="polite"></div>
+    </section>
+    <section class="cta-strip"><div><span class="eyebrow">NOTICE A PROBLEM?</span><h2>Your report can start a change.</h2><p>Share the details so the right people can review the issue.</p></div><a class="btn btn-light" href="complaint.html">Submit a complaint ↗</a></section>
+  </main>
+  <footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">C</span><span>CCMS<small>Civic Care, Made Simple</small></span></a><p>© <span id="year"></span> Civic Complaint Management System</p><a href="complaint.html">Make a report →</a></footer>
+  <script src="common.js"></script><script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>File a Complaint | CCMS</title><link rel="stylesheet" href="complaint.css"></head>
+<body>
+<header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">C</span><span>CCMS<small>Civic Care, Made Simple</small></span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="complaint.html">File Complaint</a><a href="status.html">Track Status</a><a class="nav-admin" href="login.html">Admin Login</a></nav></header>
+<main class="page-wrap">
+  <div class="page-heading"><span class="eyebrow">HELP YOUR NEIGHBOURHOOD</span><h1>File a civic complaint</h1><p>Give us clear information so the issue can be identified and reviewed.</p></div>
+  <form id="complaintform" class="complaint-form">
+    <section class="form-section"><div class="section-title"><span class="step">01</span><div><h2>Citizen details</h2><p>How can we contact you?</p></div></div>
+      <div class="field-grid"><label>Full name<input type="text" name="name" id="username" placeholder="e.g. Atharva Gurav" minlength="2" maxlength="80" required></label><label>Mobile number<input type="tel" name="mobile" id="mobile" placeholder="10-digit mobile number" inputmode="numeric" pattern="[6-9][0-9]{9}" required></label></div>
+    </section>
+    <section class="form-section"><div class="section-title"><span class="step">02</span><div><h2>Complaint information</h2><p>Tell us what needs attention.</p></div></div>
+      <div class="field-grid"><label>Complaint category<select name="complainttype" id="complainttype" required><option value="">Choose a category</option><option>Street Damage</option><option>Water Leakage</option><option>Street Light Issue</option><option>Garbage & Waste</option><option>Drainage Problem</option><option>Public Toilet Issue</option><option>Illegal Construction</option><option>Traffic Signal Problem</option><option>Public Property Damage</option><option>Industrial Area Issue</option><option>Other Civic Issue</option></select></label><label>Upload a photo (optional)<input type="file" name="complaintimg" id="complaintimg" accept="image/png,image/jpeg,image/webp"><small class="field-hint">Image filename is recorded in this browser demo; the image itself is not uploaded to a server.</small></label><label class="full-field">Detailed description<textarea name="description" id="description" rows="4" minlength="10" maxlength="1200" placeholder="Describe the problem, when you noticed it, and any useful details..." required></textarea></label></div>
+    </section>
+    <section class="form-section"><div class="section-title"><span class="step">03</span><div><h2>Issue location</h2><p>Help identify the exact area.</p></div></div>
+      <div class="field-grid"><label>Area / neighbourhood<input type="text" name="area" id="area" placeholder="e.g. Dindoli" maxlength="120" required></label><label>Nearby landmark<input type="text" name="landmark" id="landmark" placeholder="e.g. near the main bus stop" maxlength="160" required></label><label>PIN code<input type="text" name="pincode" id="pincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="6-digit PIN code" required></label></div>
+    </section>
+    <div class="form-bottom"><p>By submitting, you confirm that the details provided are accurate to the best of your knowledge.</p><button class="btn btn-primary" type="submit">Submit complaint <span>↗</span></button></div>
+    <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+  </form>
+</main>
+<footer class="site-footer"><a class="brand footer-brand" href="index.html"><span class="brand-mark">C</span><span>CCMS<small>Civic Care, Made Simple</small></span></a><p>© <span id="year"></span> Civic Complaint Management System</p><a href="status.html">Track a report →</a></footer>
+<script src="common.js"></script><script src="complaint.js"></script>
+</body></html>
